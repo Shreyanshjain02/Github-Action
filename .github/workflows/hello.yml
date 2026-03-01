@@ -5,12 +5,22 @@ on:
  push:
    branches:
       - main
-      
+     
 jobs:
-  greet:
-    runs-on: ubuntu-latest
-  steps:
-    - name: say hello to users
-      run: echo "Hello Boss"        
-    - name: say hello to username
-      run: echo "Hello $USER"
+    greet:
+      runs-on: ubuntu-latest
+      steps:
+        - name: say hello to users
+          run: echo "Hello Boss"        
+        - name: say hello to username
+          run: echo "Hello $USER"
+
+    systeminfo:
+      runs-on: ubuntu-latest
+      steps:
+        - name: sytem info
+          run: uname -a
+        - name: python version
+          run: python --version
+        - name: docker version
+          run: docker --version
