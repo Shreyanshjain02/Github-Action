@@ -1,1 +1,167 @@
-<h1>Hello Boss</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shreyansh Jain | DEVOPS | Systems Architect |SRE </title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #050505;
+            --surface: #111111;
+            --accent: #3b82f6; /* Modern Blue for PayPal/Trust */
+            --text: #ffffff;
+            --text-muted: #a1a1aa;
+            --border: #27272a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Sophisticated Header */
+        nav {
+            padding: 1.5rem 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+        }
+
+        .brand { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 1.2rem; letter-spacing: -1px; }
+        .status-dot { height: 8px; width: 8px; background: #22c55e; border-radius: 50%; display: inline-block; margin-right: 8px; box-shadow: 0 0 10px #22c55e; }
+
+        /* Hero: Focused on Scale */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; padding: 0 12%; }
+        .hero h1 { font-size: clamp(40px, 6vw, 72px); font-weight: 800; letter-spacing: -2px; line-height: 1; margin-bottom: 20px; }
+        .hero p { max-width: 650px; color: var(--text-muted); font-size: 1.2rem; margin-bottom: 30px; }
+        .highlight { color: var(--accent); }
+
+        /* Performance Metrics Section */
+        .stats-bar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 80px;
+        }
+        .stat-card {
+            padding: 24px;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        .stat-card h4 { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; margin-bottom: 10px; }
+        .stat-card div { font-family: 'JetBrains Mono', monospace; font-size: 1.5rem; font-weight: 600; color: var(--accent); }
+
+        /* Experience Section */
+        .section-title { font-size: 0.9rem; text-transform: uppercase; color: var(--accent); font-family: 'JetBrains Mono'; margin-bottom: 40px; display: block; }
+        .exp-row {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            margin-bottom: 60px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+        .exp-row h3 { font-size: 1.5rem; margin-bottom: 8px; }
+        .exp-meta { color: var(--text-muted); font-family: 'JetBrains Mono'; font-size: 0.9rem; }
+        
+        /* List styling for SRE achievements */
+        ul { list-style: none; }
+        li { position: relative; padding-left: 20px; margin-bottom: 12px; color: var(--text-muted); }
+        li::before { content: "→"; position: absolute; left: 0; color: var(--accent); }
+
+        .btn {
+            padding: 12px 24px;
+            background: var(--text);
+            color: var(--bg);
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.2s;
+            display: inline-block;
+        }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+
+        @media (max-width: 768px) {
+            .exp-row { grid-template-columns: 1fr; gap: 20px; }
+            .hero { padding: 0 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand"><span class="status-dot"></span>SHREYANSH_JAIN.sh</div>
+        <div class="exp-meta">SDE-III @ PayPal</div>
+    </nav>
+
+    <section class="hero">
+        <span class="section-title">Site Reliability & Systems</span>
+        <h1>Engineering for <span class="highlight">99.999%</span> availability.</h1>
+        <p>I build and scale high-concurrency systems at PayPal, ensuring global financial infrastructure remains resilient, observable, and performant.</p>
+        <div>
+            <a href="https://www.linkedin.com/in/shreyansh-jain-599353179/" class="btn">View LinkedIn Profile</a>
+        </div>
+    </section>
+
+    <section style="padding: 0 12% 100px;">
+        <div class="stats-bar">
+            <div class="stat-card">
+                <h4>Scale</h4>
+                <div>Global / Enterprise</div>
+            </div>
+            <div class="stat-card">
+                <h4>Impact</h4>
+                <div>5000+ Students Mentored</div>
+            </div>
+            <div class="stat-card">
+                <h4>Focus</h4>
+                <div>Distributed Systems</div>
+            </div>
+        </div>
+
+        <span class="section-title">Core Experience</span>
+        
+        <div class="exp-row">
+            <div class="exp-meta">2021 — PRESENT</div>
+            <div>
+                <h3>SDE III at PayPal</h3>
+                <ul>
+                    <li>Optimizing mission-critical payment infrastructure for high availability and low latency.</li>
+                    <li>Designing automated recovery workflows to minimize Mean Time to Recovery (MTTR).</li>
+                    <li>Leading cross-functional teams to modernize legacy monolithic services into microservices.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="exp-row">
+            <div class="exp-meta">COMMUNITY</div>
+            <div>
+                <h3>Lead Mentor @ AccioJob</h3>
+                <ul>
+                    <li>Architecting curriculum for Data Structures, Algorithms, and System Design.</li>
+                    <li>Mentored a community of 5000+ aspiring engineers to land roles at top product companies.</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <footer style="padding: 50px 12%; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.8rem;">
+        <div style="display: flex; justify-content: space-between;">
+            <p>© 2024 Shreyansh Jain</p>
+            <p>Built with Zero-Latency </p>
+        </div>
+    </footer>
+
+</body>
+</html>

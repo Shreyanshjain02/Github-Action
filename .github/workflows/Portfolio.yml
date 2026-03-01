@@ -1,0 +1,39 @@
+name: sj_portfolio
+
+on:
+  push:
+    branches:
+       - main
+  workflow_dispatch:
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+
+jobs:
+    portfolio_deploy:
+        runs-on: ubuntu-latest
+
+        environment: 
+
+        steps:
+            # we are using github action automated steps
+
+            # First: we checkout our code into github
+            - name: checkout code
+              uses: actions/checkout@v4
+           
+            # Second: we build and configure pages
+            - name: setup pages
+              uses: actions/configure-pages@v4
+            
+            # Third: We are creating static artifacts or file
+            - name: upload static
+              uses: actions/upload-pages-artifact@v4
+
+            # Fourth: Deploy everything and see magic
+            - name: deployment
+              uses: actions/deploy-pages@v4
+
