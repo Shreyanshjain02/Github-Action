@@ -1,0 +1,13 @@
+name: dockerinit
+
+on: 
+ workflow_dispatch:
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: nginx-container
+        run: docker run -it --name python-con -p 80:80 nginx
+      - name: con process
+        run: docker ps -a
