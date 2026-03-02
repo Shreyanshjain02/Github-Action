@@ -32,6 +32,8 @@ jobs:
             # Third: We are creating static artifacts or file
             - name: upload static
               uses: actions/upload-pages-artifact@v4
+              with:
+                path: '.'
 
             # Fourth: Deploy everything and see magic
             - name: deployment
