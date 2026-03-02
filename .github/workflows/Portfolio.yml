@@ -1,9 +1,9 @@
 name: sj_portfolio
 
 on:
-  push:
-    branches:
-       - main
+#   push:
+#     branches:
+#        - main
   workflow_dispatch:
 
 permissions:
