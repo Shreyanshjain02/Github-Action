@@ -1,0 +1,12 @@
+ServerName: ApplicationServer
+ServerDetails:
+  -Name: ubuntu
+  -ip: 123:12:123:1
+  -port: 1990
+
+DatabaseDetails:
+  -Name: mysql
+  -Credentials: 
+    -user: boss
+    -pass: boss123
+  
