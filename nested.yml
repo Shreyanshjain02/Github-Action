@@ -9,4 +9,14 @@ DatabaseDetails:
   -Credentials: 
     -user: boss
     -pass: boss123
-  
+
+#Multiline string 
+
+Startup_scripts_bold: |
+  echo "welcome
+  to app server
+  "
+Startup_scripts_fold: >
+  echo "welcome
+  to app server
+  "
