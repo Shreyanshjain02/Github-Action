@@ -1,4 +1,14 @@
 Name: Shreyansh
 Role: Site Reliability Engineer
 Experience_years: 6year
-Learning: (DevOps, SRE, Python, Performance Engineering, Linux, Docker, Github, Github Action, AWS, Observability)
+Learned: 
+  DevOps: true
+  SRE: truesat
+  Python: true
+  Performance Engineering: true
+  Linux: true
+  Docker: true
+  Github: true
+  Github Action: true
+  AWS: false
+  Observability: false
