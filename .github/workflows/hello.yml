@@ -12,7 +12,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Checkout from actions
-          run: actions/checkout@v6
+          uses: actions/checkout@v6
 
         - name: greet
           run: echo "Hello $USER"
@@ -22,4 +22,4 @@ jobs:
       steps:
         - name: system info
           run: uname -a
-          
+
