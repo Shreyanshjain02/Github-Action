@@ -17,19 +17,31 @@ jobs:
         - name: greet
           run: echo "Hello $USER"
         
+        - name: data and time
+          run: date
+        
+        - name: Branch trigger run
+          run: |
+            echo "branch= $GITHUB_REF"
+            echo "OS= $RUNNER_OS"
+            ls
+      
         - name: system info
           run: |
-            sudo apt update && sudo apt install inxi
-            inxi -f
+            uname -a
+            lscpu
+            lsmem
       
         - name: git files
           run: |
+            pwd
             cd /home/runner/work/Github-Action/Github-Action/
             git status
             git log
             git remote -v
+            ls
 
-            
+
            
 
        
