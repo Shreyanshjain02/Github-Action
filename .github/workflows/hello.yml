@@ -16,10 +16,21 @@ jobs:
 
         - name: greet
           run: echo "Hello $USER"
-
-    systeminfo:
-      runs-on: ubuntu-latest
-      steps:
+        
         - name: system info
-          run: uname -a
+          run: |
+            sudo apt update && sudo apt install inxi
+            inxi -f
+      
+        - name: git files
+          run: |
+            cd /home/runner/work/Github-Action/Github-Action/
+            git status
+            git log
+            git remote -v
+
+            
+           
+
+       
 
