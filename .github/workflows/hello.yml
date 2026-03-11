@@ -2,26 +2,24 @@
 name: Hello
 
 on: 
-#  push:
-#    branches:
-#       - main
- workflow_dispatch:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
      
 jobs:
     greet:
       runs-on: ubuntu-latest
       steps:
-        - name: say hello to users
-          run: echo "Hello Boss"        
-        - name: say hello to username
+        - name: Checkout from actions
+          run: actions/checkout@v6
+
+        - name: greet
           run: echo "Hello $USER"
 
     systeminfo:
       runs-on: ubuntu-latest
       steps:
-        - name: sytem info
+        - name: system info
           run: uname -a
-        - name: python version
-          run: python --version
-        - name: docker version
-          run: docker --version
+          
