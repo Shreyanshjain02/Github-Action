@@ -1,0 +1,22 @@
+name: WF_Matrix
+
+on:
+  workflow_dispatch:
+    
+
+
+jobs:
+    JB_Matrix:
+        runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            python-version: ["3.10","3.11","3.12","3.13","3.14"]
+
+        steps:
+          - name: Install python${{matrix.python-version}} with action
+            uses: actions/setup-python@v6
+            with:
+                python-version: "${{matrix.python-version}}"
+
+          - run: python --version
+
