@@ -48,11 +48,15 @@ jobs:
             uname -a
             hostname
             echo "UR: $USER"
-
       - name: services and version
         run: |
             python --version
-            docker --version
+            
+            if command -v docker &> /dev/null; then
+              docker --version
+            else
+              echo "Docker not found, skipping..."
+            fi
             node --version
             git --version
 
