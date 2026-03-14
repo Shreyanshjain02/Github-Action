@@ -10,7 +10,7 @@ jobs:
           - name: check system
             run: |
                 uname -a
-                python --version
+                python3 --version
                 docker --version
                 git --version
-                
+
