@@ -3,13 +3,14 @@ name: WF_Matrix
 on:
   workflow_dispatch:
     
-strategy:
-  matrix:
-    python-version: [3.10,3.11,3.12,3.13,3.14]
+
 
 jobs:
     JB_Matrix:
         runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            python-version: [3.10,3.11,3.12,3.13,3.14]
 
         steps:
           - name: python version check
@@ -17,6 +18,9 @@ jobs:
     
     JB_Code:
         runs-on: ubuntu-latest
+        strategy:
+          matrix:
+            python-version: [3.10,3.11,3.12,3.13,3.14]
 
         steps:
           - name: running small python code
