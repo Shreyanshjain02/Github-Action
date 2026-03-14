@@ -7,7 +7,7 @@ on:
 
 jobs:
   JB_Pull_Request_Trigger:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: Check pull request
