@@ -1,0 +1,40 @@
+name: WF_multi-os
+
+on:
+  workflow_dispatch:
+    inputs:
+      description: "Type Do it Daddy"
+      required: true
+      type: string
+
+jobs:
+  JB_Linux:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print System ServerDetails
+        run: |
+            uname -a
+            hostname
+            echo "UR: $USER"
+
+  JB_Windows:
+    runs-on: windows-latest
+    steps:
+      - name: Print System ServerDetails
+        run: |
+            systeminfo
+            hostname
+            echo "UR: $USER"
+  
+  JB_MacOs:
+    runs-on: macos-latest
+    steps:
+      - name: Print System ServerDetails
+        run: |
+            uname -a
+            hostname
+            echo "UR: $USER"
+
+
+    
