@@ -18,6 +18,12 @@ jobs:
             uname -a
             hostname
             echo "UR: $USER"
+      - name: services and version
+        run: |
+            python --version
+            docker --version
+            node --version
+            git --version
 
   JB_Windows:
     runs-on: windows-latest
@@ -27,6 +33,12 @@ jobs:
             systeminfo
             hostname
             echo "UR: $USER"
+      - name: services and version
+        run: |
+            python --version
+            docker --version
+            node --version
+            git --version
   
   JB_MacOs:
     runs-on: macos-latest
@@ -36,6 +48,13 @@ jobs:
             uname -a
             hostname
             echo "UR: $USER"
+
+      - name: services and version
+        run: |
+            python --version
+            docker --version
+            node --version
+            git --version
 
 
     
