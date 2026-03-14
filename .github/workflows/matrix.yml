@@ -13,19 +13,15 @@ jobs:
             python-version: [3.10,3.11,3.12,3.13,3.14]
 
         steps:
-          - name: python version check
+          - name: Install python
+            run: sudo apt-get update && apt install python${{matrix.python-version}}
+          - name: check version
             run: python --version
     
     JB_Code:
         runs-on: ubuntu-latest
-        strategy:
-          matrix:
-            python-version: [3.10,3.11,3.12,3.13,3.14]
-
         steps:
           - name: running small python code
-            run: |
-                python
-                print("Welcome to pyhton, Boss")
+            run: python --version
 
 
