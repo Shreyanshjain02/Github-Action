@@ -13,4 +13,7 @@ jobs:
                 python3 --version
                 docker --version
                 git --version
+                mkdir /home/ubuntu/app && cd /home/ubuntu/app
+                touch hello.txt 
+                pwd
 
