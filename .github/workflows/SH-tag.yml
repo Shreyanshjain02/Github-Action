@@ -7,8 +7,6 @@ jobs:
     setup:
         runs-on: [self-hosted,sjrunner-ec2]
         steps:
-          - name: install nodejs
-            run: sudo apt-get update && sudo apt install nodejs -y
           - name: check version name
             run: node --version
           - name: user name
