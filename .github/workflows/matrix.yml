@@ -14,7 +14,11 @@ jobs:
 
         steps:
           - name: Install python
-            run: sudo apt-get update && sudo apt install python${{matrix.python-version}}
+            run: |
+                sudo add-apt-repository ppa:deadsnakes/ppa -y 
+                sudo apt-get update
+                sudo apt install python${{matrix.python-version}}
+                
           - name: check version
             run: python --version
     
