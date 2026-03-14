@@ -2,7 +2,14 @@ name: WF_manual_input
 
 on:
   workflow_dispatch:
-    input:
+    inputs:
+      first_input: 
+        description: 'Text to print'
+        required: true
+        type: string
+
+
+
 
 jobs:
   JB_input:
@@ -10,4 +17,4 @@ jobs:
 
     steps:
       - name: print input
-        run: echo "Your input:${input}"
+        run: echo "Your input:${{inputs}}"
