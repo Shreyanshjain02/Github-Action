@@ -1,0 +1,14 @@
+name: WF_Pull_Request_Trigger
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  JB_Pull_Request_Trigger:
+    runs_on: ubuntu-latest
+
+    steps:
+      - name: Check pull request
+        run: echo "PR check running for branch: ${{github.ref}}"
