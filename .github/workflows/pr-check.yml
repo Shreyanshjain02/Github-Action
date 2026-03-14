@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Check pull request
-        run: echo "PR check running for branch: ${{github.ref}}"
+        run: echo "PR check running for branch:${GITHUB_REF}"
