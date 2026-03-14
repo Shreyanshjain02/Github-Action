@@ -3,9 +3,10 @@ name: WF_multi-os
 on:
   workflow_dispatch:
     inputs:
-      description: "Type Do it Daddy"
-      required: true
-      type: string
+      first_input:
+        description: "Type Do it Daddy"
+        required: true
+        type: string
 
 jobs:
   JB_Linux:
