@@ -17,4 +17,4 @@ jobs:
 
     steps:
       - name: print input
-        run: echo "Your input:${{inputs}}"
+        run: echo "Your input:${{inputs.first_input}}"
