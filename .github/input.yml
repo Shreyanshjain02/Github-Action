@@ -1,0 +1,13 @@
+name: WF_manual_input
+
+on:
+  workflow_dispatch:
+    input:
+
+jobs:
+  JB_input:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print input
+        run: echo "Your input:${input}"
