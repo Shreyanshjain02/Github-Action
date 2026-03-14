@@ -1,0 +1,16 @@
+name: WF_selfhosted
+
+on:
+  workflow_dispatch:
+
+jobs:
+    JB_selfhosted:
+        runs-on: self-hosted
+        steps:
+          - name: check system
+            run: |
+                uname -a
+                python --version
+                docker --version
+                git --version
+                
