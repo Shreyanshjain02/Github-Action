@@ -1,0 +1,27 @@
+name: WF_multi-job
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+    build:
+        runs-on: ubuntu:latest
+        steps:
+          - name: Print message
+            run: echo "Your code is building"
+    
+    test:
+        runs-on: ubuntu:latest
+        needs: [build]
+        steps:
+          - name: Print message
+            run: echo "Your code is under test"
+    
+    deploy:
+        runs-on: ubuntu:latest
+        needs: [test]
+        steps:
+          - name: Print message
+            run: echo "Your code is deployed to production"
+
