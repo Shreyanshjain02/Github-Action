@@ -1,0 +1,17 @@
+name: WF_output
+
+on:
+  workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: set output
+            run: echo "date=19feb" >> $GITHUB_OUTPUT
+    test:
+        runs-on: ubuntu-latest
+        needs: [build]
+        steps:
+          - name: read output
+            run: echo "${{ needs.build.outputs.date }}"
