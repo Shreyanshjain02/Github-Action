@@ -1,0 +1,23 @@
+name: WF_env_variable
+
+env:
+    APP_NAME: myapp
+
+on:
+  workflow_dispatch:
+
+jobs:
+    env-var:
+        runs-on: ubuntu-latest
+        env:
+            ENVIRONMENT: staging
+        steps:           
+
+          - name: Print all variables
+            env:
+                VERSION: '1.0.0'
+            run: echo "$APP_NAME,
+                 $ENVIRONMENT,
+                 $VERSION,
+                 ${{github.event.commits[0].message}},
+                 $USER"
