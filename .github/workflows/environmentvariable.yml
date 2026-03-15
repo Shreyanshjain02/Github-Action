@@ -19,5 +19,5 @@ jobs:
             run: echo "$APP_NAME,
                  $ENVIRONMENT,
                  $VERSION,
-                 ${{github.event.commits[0].message}},
-                 $USER"
+                 $GITHUB_SHA,
+                 $GITHUB_ACTOR"
