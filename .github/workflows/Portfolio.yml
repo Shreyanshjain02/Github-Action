@@ -26,7 +26,7 @@ jobs:
            
             # Second: we build and configure pages
             - name: setup pages
-              uses: actions/configure-pages@v6
+              uses: actions/configure-pages@v5
             
             # Third: We are creating static artifacts or file
             - name: upload static
@@ -36,5 +36,5 @@ jobs:
 
             # Fourth: Deploy everything and see magic
             - name: deployment
-              uses: actions/deploy-pages@v6
+              uses: actions/deploy-pages@v4.0.5
 
