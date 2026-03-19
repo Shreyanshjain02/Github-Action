@@ -22,19 +22,19 @@ jobs:
 
             # First: we checkout our code into github
             - name: checkout code
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
            
             # Second: we build and configure pages
             - name: setup pages
-              uses: actions/configure-pages@v4
+              uses: actions/configure-pages@v6
             
             # Third: We are creating static artifacts or file
             - name: upload static
-              uses: actions/upload-pages-artifact@v4
+              uses: actions/upload-pages-artifact@v6
               with:
                 path: '.'
 
             # Fourth: Deploy everything and see magic
             - name: deployment
-              uses: actions/deploy-pages@v4
+              uses: actions/deploy-pages@v6
 
