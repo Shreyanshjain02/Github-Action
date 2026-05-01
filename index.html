@@ -1,136 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shreyansh Jain | Performance & SRE</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0f172a;
-            color: #f1f5f9;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyansh Jain | SRE</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap');
 
-        .gradient-text {
-            background: linear-gradient(90deg, #38bdf8, #818cf8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #020617;
+      color: #e2e8f0;
+    }
 
-        .card {
-            background: rgba(30, 41, 59, 0.5);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.2s ease;
-        }
+    .gradient-text {
+      background: linear-gradient(90deg, #38bdf8, #6366f1);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-        .card:hover {
-            transform: translateY(-5px);
-            border-color: #38bdf8;
-        }
+    .card {
+      background: rgba(30, 41, 59, 0.5);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: all 0.3s ease;
+    }
 
-        .mono { font-family: 'JetBrains Mono', monospace; }
-    </style>
+    .card:hover {
+      transform: translateY(-6px) scale(1.01);
+      box-shadow: 0 0 30px rgba(56,189,248,0.2);
+      border-color: #38bdf8;
+    }
+
+    .mono { font-family: 'JetBrains Mono', monospace; }
+  </style>
 </head>
-<body class="leading-relaxed">
+<body>
 
-    <header class="max-w-5xl mx-auto pt-20 pb-12 px-6">
-        <h1 class="text-5xl font-extrabold mb-2 tracking-tight">SHREYANSH <span class="gradient-text">JAIN</span></h1>
-        <h2 class="text-2xl font-semibold text-sky-400 mono mb-6">Performance & Reliability Engineer</h2>
-        <p class="text-slate-400 max-w-2xl text-lg mb-8">
-            Expertise in identifying infrastructure bottlenecks and optimizing complex distributed systems. Currently scaling my expertise into <b>Site Reliability Engineering</b> with a focus on automation, IaC, and cloud-native resilience.
-        </p>
-        <div class="flex flex-wrap gap-4 text-sm mono">
-            <a href="mailto:j.shreyansh019@gmail.com" class="flex items-center gap-2 hover:text-sky-400 transition"><i class="fas fa-envelope"></i> Email</a>
-            <a href="https://www.linkedin.com/in/shreyansh-jain-599353179" class="flex items-center gap-2 hover:text-sky-400 transition"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <span class="flex items-center gap-2 text-slate-500"><i class="fas fa-phone"></i> +91-9713219701</span>
-        </div>
-    </header>
+<!-- Glow Background -->
+<div class="fixed inset-0 -z-10">
+  <div class="absolute top-[-100px] left-1/2 w-[600px] h-[600px] bg-sky-500 opacity-20 blur-[120px] rounded-full"></div>
+</div>
 
-    <main class="max-w-5xl mx-auto px-6 pb-20">
-        
-        <section class="mb-16">
-            <h3 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6">Technical Ecosystem</h3>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="card p-6 rounded-xl">
-                    <h4 class="text-sky-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-microchip"></i> Infrastructure</h4>
-                    <ul class="space-y-2 text-slate-300 text-sm">
-                        <li>AWS/Azure</li>
-                        <li>Docker & Kubernetes</li>
-                        <li>Terraform/Ansible (Learning)</li>
-                    </ul>
-                </div>
-                <div class="card p-6 rounded-xl">
-                    <h4 class="text-sky-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-chart-line"></i> Observability</h4>
-                    <ul class="space-y-2 text-slate-300 text-sm">
-                        <li>Grafana(Prometheus/Loki/Tempo) </li>
-                        <li>DataDog</li>
-                    </ul>
-                </div>
-                <div class="card p-6 rounded-xl">
-                    <h4 class="text-sky-400 font-bold mb-4 flex items-center gap-2"><i class="fas fa-code"></i> Engineering</h4>
-                    <ul class="space-y-2 text-slate-300 text-sm">
-                        <li>Python / SQL / Beanshell</li>
-                        <li>JMeter / BlazeMeter</li>
-                        <li>GitHub Actions / Jenkins</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+<!-- Header -->
+<header class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+  <h1 class="text-5xl md:text-6xl font-extrabold mb-4">
+    SHREYANSH <span class="gradient-text">JAIN</span>
+  </h1>
 
-        <div class="grid md:grid-cols-3 gap-12">
-            <div class="md:col-span-2">
-                <h3 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-8">Professional Trajectory</h3>
-                
-                <div class="relative border-l-2 border-slate-800 ml-4">
-                    <div class="mb-12 ml-8 relative">
-                        <div class="absolute -left-10 mt-1.5 w-4 h-4 rounded-full bg-sky-500 border-4 border-slate-900 shadow-[0_0_10px_#38bdf8]"></div>
-                        <span class="mono text-xs text-sky-400">OCT 2022 — PRESENT</span>
-                        <h4 class="text-xl font-bold">Performance & Reliability Engineer</h4>
-                        <p class="text-slate-400 font-medium mb-3">Dassault Systemes, Pune</p>
-                        <ul class="text-slate-300 space-y-2 text-sm list-disc list-outside ml-4">
-                            <li>Leading cross-functional discussions with DEV/OPS to translate reliability requirements into architectural outcomes.</li>
-                            <li>Engineered POC and PROD log analysis tools using Python and Grafana to identify system bottlenecks.</li>
-                            <li>Identified frontend/backend performance gaps for distributed 3DSearch products.</li>
-                        </ul>
-                    </div>
+  <h2 class="text-2xl text-sky-400 mono mb-6">
+    <span id="typing"></span>
+  </h2>
 
-                    <div class="mb-8 ml-8 relative">
-                        <div class="absolute -left-10 mt-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-900"></div>
-                        <span class="mono text-xs text-slate-500">OCT 2019 — 2022</span>
-                        <h4 class="text-xl font-bold">Performance Test Engineer</h4>
-                        <p class="text-slate-400 font-medium mb-3">TCS, Mumbai</p>
-                        <ul class="text-slate-300 space-y-2 text-sm list-disc list-outside ml-4">
-                            <li>Executed end-to-end performance tuning for Element Fleet Management, optimizing database query efficiency.</li>
-                            <li>Developed complex scripts in JMeter and LoadRunner for extreme stress and endurance scenarios.</li>
-                            <li>Improved bill processing speed by 30% through targeted performance tuning.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <p class="text-slate-400 max-w-2xl text-lg mb-8">
+    Site Reliability Engineer with 6+ years of experience building resilient distributed systems. 
+    Improved uptime from <b>80% to 95.3%</b> and reduced MTTR from <b>2 hours to 30 minutes</b> through automation and observability.
+  </p>
 
-            <div class="space-y-12">
-                <section>
-                    <h3 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-6">Key Achievements</h3>
-                    <div class="space-y-4">
-                        <div class="text-sm">
-                            <p class="text-sky-400 font-bold">Champion Award</p>
-                            <p class="text-slate-400 italic text-xs">Dassault Systemes</p>
-                            <p class="text-slate-300 mt-1">Benchmarked dual-product performance in record time.</p>
-                        </div>
-                        <div class="text-sm border-t border-slate-800 pt-4">
-                            <p class="text-sky-400 font-bold">On the Spot Award</p>
-                            <p class="text-slate-400 italic text-xs">TCS</p>
-                            <p class="text-slate-300 mt-1">30% faster reporting through system optimization.</p>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-    </main>
+  <div class="flex flex-wrap gap-6 text-sm mono">
+    <a href="mailto:j.shreyansh019@gmail.com" class="hover:text-sky-400"><i class="fas fa-envelope"></i> Email</a>
+    <a href="#" class="hover:text-sky-400"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <span class="text-slate-500"><i class="fas fa-phone"></i> +91-9713219701</span>
+  </div>
+</header>
+
+<main class="max-w-6xl mx-auto px-6 pb-20">
+
+<!-- Stats -->
+<section class="mb-20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+  <div>
+    <p class="text-3xl font-bold text-sky-400">95.3%</p>
+    <p class="text-xs text-slate-400">Uptime</p>
+  </div>
+  <div>
+    <p class="text-3xl font-bold text-sky-400">75%</p>
+    <p class="text-xs text-slate-400">MTTR Reduction</p>
+  </div>
+  <div>
+    <p class="text-3xl font-bold text-sky-400">60%</p>
+    <p class="text-xs text-slate-400">Latency Reduction</p>
+  </div>
+  <div>
+    <p class="text-3xl font-bold text-sky-400">10K+</p>
+    <p class="text-xs text-slate-400">Requests/day</p>
+  </div>
+</section>
+
+<!-- What I Do -->
+<section class="mb-20">
+  <h3 class="text-xs uppercase text-slate-500 mb-6">What I Do</h3>
+  <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+    <div class="card p-6 rounded-xl">
+      <h4 class="text-sky-400 font-bold mb-3">Reliability Engineering</h4>
+      <p class="text-sm text-slate-300">SLO/SLI, uptime optimization, incident response.</p>
+    </div>
+    <div class="card p-6 rounded-xl">
+      <h4 class="text-sky-400 font-bold mb-3">Observability</h4>
+      <p class="text-sm text-slate-300">Prometheus, Grafana, Loki dashboards & alerts.</p>
+    </div>
+    <div class="card p-6 rounded-xl">
+      <h4 class="text-sky-400 font-bold mb-3">Performance Engineering</h4>
+      <p class="text-sm text-slate-300">Load, stress & endurance testing, latency optimization, capacity planning.</p>
+    </div>
+    <div class="card p-6 rounded-xl">
+      <h4 class="text-sky-400 font-bold mb-3">Chaos Engineering</h4>
+      <p class="text-sm text-slate-300">Failure injection, resilience testing, and system behavior validation using LitmusChaos.</p>
+    </div>
+    <div class="card p-6 rounded-xl">
+      <h4 class="text-sky-400 font-bold mb-3">Automation</h4>
+      <p class="text-sm text-slate-300">Terraform, Python self-healing systems.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section class="mb-20">
+  <h3 class="text-xs uppercase text-slate-500 mb-6">Experience</h3>
+
+  <div class="card p-6 rounded-xl mb-6">
+    <h4 class="text-xl font-bold">SRE - Dassault Systemes</h4>
+    <ul class="text-sm mt-3 text-slate-300 list-disc ml-4">
+      <li>Improved uptime from 80% to 95.3%</li>
+      <li>Reduced MTTR from 2h to 30m</li>
+      <li>Built observability stack with Prometheus & Grafana</li>
+    </ul>
+  </div>
+
+  <div class="card p-6 rounded-xl">
+    <h4 class="text-xl font-bold">Performance Engineer - TCS</h4>
+    <ul class="text-sm mt-3 text-slate-300 list-disc ml-4">
+      <li>Reduced latency by 60%</li>
+      <li>Handled 10K+ daily requests</li>
+      <li>Advanced performance testing using JMeter</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Projects -->
+<section class="mb-20">
+  <h3 class="text-xs uppercase text-slate-500 mb-6">Projects</h3>
+  <div class="card p-6 rounded-xl">
+    <h4 class="text-sky-400 font-bold mb-3">Microservice Reliability System</h4>
+    <ul class="text-sm text-slate-300 list-disc ml-4 space-y-2">
+      <li>AWS EKS with Docker & Kubernetes</li>
+      <li>Observability with Prometheus, Grafana, Loki</li>
+      <li>Python auto-remediation reducing MTTR</li>
+      <li>Chaos engineering with LitmusChaos</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- Typing Animation -->
+<script>
+const roles = ["Site Reliability Engineer", "Performance Engineer", "Cloud Specialist"];
+let i = 0, j = 0, current = "", isDeleting = false;
+
+function type() {
+  current = roles[i];
+  document.getElementById("typing").textContent = current.substring(0, j);
+
+  if (!isDeleting && j < current.length) j++;
+  else if (isDeleting && j > 0) j--;
+  else {
+    isDeleting = !isDeleting;
+    if (!isDeleting) i = (i + 1) % roles.length;
+  }
+  setTimeout(type, isDeleting ? 40 : 80);
+}
+
+type();
+</script>
+
 </body>
 </html>
